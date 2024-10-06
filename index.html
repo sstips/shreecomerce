@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ecommerce Website</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/mystyle.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+     <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine"><link rel="preconnect" href="https://fonts.googleapis.com">
+
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+
+      <!-- End Google font -->
+
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+      </style>
+
+       
+
+</head>
+<body>
+  
+  <!-- CHECKPOINT 1 -->
+
+  <!-- Navigation bar -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-custom">
+  <a class="navbar-brand" href="#">  <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="Brand Name"> 
+    <b style="text-transform: uppercase; font-weight: bold; text-shadow: 1px 2px 2px #000; color: #fff;">Shree Tours and Travels</b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Destinatioins</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Europe</a>
+          <a class="dropdown-item" href="#">Asia</a>
+          <a class="dropdown-item" href="#">Africa</a>
+          <a class="dropdown-item" href="#">America</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Shop</a>
+      </li>
+      <li class="nav-item" >
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Support</a>
+      </li>
+    </ul>
+    <span class="navbar-text">
+      <button type="button" class="btn btn-outline-light">Sign Up</button>
+      <button type="button" class="btn btn-outline-light">Login</button>
+    </span>
+  </div>
+</nav>
+  
+  
+  <!-- Intro Page -->
+
+  <div class="jumbotron" id="hero">
+
+      <div class="row">
+        <div class="col-md-6">
+           <h1 class="display-4">Discover the World</h1>
+            <p class="lead">Exclusive Travel Packages - 2024</p>
+            <hr class="my-4">
+            <p style="color: #02027a; font-weight: bold;">Save up to 30% on early bookings.</p>
+
+            <div class="container" id="anim">
+              <h2> Visit: <span id="animtext"> </span></h2>
+            </div>
+            <a class="btn btn-primary btn-lg" href="#booknow" role="button" >Book Now</a>
+        </div>
+
+        <div class="col-md-6">
+          <img id="jumbotron-img" src="images/background-page-img.jpg" class="img-fluid"  class="border border-white">
+        </div>
+      </div>
+   
+  </div>
+
+    <!-- END OF CHECKPOINT 1 -->
+
+    <!-- START OF CHECKPOINT 2 -->
+    <!-- REGISTRATION PAGE -->
+        <div class="container text-center" id="booknow">
+          <h1> Booking <span>Details</span></h1>
+          <hr class="my-4">
+            
+          <!-- IMAGE PART -->
+          <div class="row">
+            <div class="col-md-6">
+              <img src="./images/Tour 1 (5).jpeg" alt="Image" class="img-fluid">
+            </div>
+                       
+              <!-- BOOKING FORM -->
+              <div class="col-md-6" id="bkform">
+                <form id="booking-form">
+                    <label for="destination">Where to:</label>
+                    <select id="destination" name="destination">
+                        <option value="place1">India</option>
+                        <option value="place2">Australia</option>
+                        <option value="place3">Japan</option>
+                        <option value="place4">Germany</option>
+                        <option value="place5">Canada</option>
+                        <option value="place6">Brazile</option>
+                        <!-- Add more options as needed -->
+                    </select>
+
+                    <label for="persons">How Many Persons:</label>
+                    <input type="number" id="persons" name="persons" min="1">
+
+                    <label for="start-date">Start Date:</label>
+                    <input type="date" id="start-date" name="start-date">
+
+                    <label for="end-date">End Date:</label>
+                    <input type="date" id="end-date" name="end-date">
+
+                    <label for="description" placeholder="Enter minimum 50 words">Description:</label>
+                    <textarea id="description" name="description" minlength="50" maxlength="500"></textarea>
+
+                    <button type="button" onclick = "submitForm()" >Book Now</button>
+                </form>
+            </div>
+             
+            <!--FORM SUBMISSION BUTTON -->
+             <script src="./js/myjs.js"></script> 
+            </div>
+          </div>
+        </div>
+
+
+<!-- Booking Section -->
+
+
+<!-- Package Gallary -->
+<!-- Package Gallary row 1 -->
+      <div class="container mt-5 text-center" id="package">
+          <h1> Package <span>Gallery</span></h1>
+          <hr class="my-4">
+          <div class="row mb-5">
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-body text-center">
+                            <div class="container text-center">
+                              <img src="./images/Kanazawa.JPG" class="img-fluid">   
+                            </div>
+                          <h2>Kanazawa</h2> 
+                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Eum quas tempora id ullam necessitatibus, amet praesentium 
+                            reiciendis ea corrupti aperiam repudiandae voluptas at consequatur laudantium, 
+                            labore deserunt. Rerum, reprehenderit similique.</p>
+
+                          <i class="bi bi-star-fill"></i>               
+                          <i class="bi bi-star-fill"></i>               
+                          <i class="bi bi-star-fill"></i>               
+                          <i class="bi bi-star-fill"></i>               
+                          <i class="bi bi-star-half"></i>      
+                          
+                            <div id="packagefooter">
+                              <h5> Price - $100 </h5>
+                              <button type="button">Book Now</button>                       
+                            </div>
+                  </div>                
+                </div>            
+              </div>  
+
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <div class="container text-center">
+                      <img src="./images/Munich.jpg" class="img-fluid">   
+                    </div>
+                      <h2>Munich</h2> 
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Eum quas tempora id ullam necessitatibus, amet praesentium 
+                        reiciendis ea corrupti aperiam repudiandae voluptas at consequatur laudantium, 
+                        labore deserunt. Rerum, reprehenderit similique.</p>
+
+                      <i class="bi bi-star-fill"></i>               
+                      <i class="bi bi-star-fill"></i>               
+                      <i class="bi bi-star-fill"></i>               
+                      <i class="bi bi-star-fill"></i>               
+                      <i class="bi bi-star-half"></i>  
+                                   
+                      <div id="packagefooter">
+                        <h5> Price - $300 </h5>
+                        <button type="button">Book Now</button>                       
+                      </div>
+                  </div>                
+                </div>            
+              </div> 
+
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <div class="container text-center">
+                      <img src="./images/Colosseum.jpg" class="img-fluid">   
+                    </div>
+                      <h2>Colosseum</h2> 
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Eum quas tempora id ullam necessitatibus, amet praesentium 
+                        reiciendis ea corrupti aperiam repudiandae voluptas at consequatur laudantium, 
+                        labore deserunt. Rerum, reprehenderit similique.</p>
+
+                      <i class="bi bi-star-fill"></i>               
+                      <i class="bi bi-star-fill"></i>               
+                      <i class="bi bi-star-fill"></i>               
+                      <i class="bi bi-star-fill"></i>               
+                      <i class="bi bi-star-half"></i>  
+                      
+                      <div id="packagefooter">
+                        <h5> Price - $500 </h5>
+                        <button type="button">Book Now</button>                       
+                      </div>
+                  </div>                
+                </div>            
+              </div> 
+          </div>
+      
+
+          <!-- Package Gallary row 2 -->
+
+          <div class="row mb-5">
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body text-center">
+                  <div class="container text-center">
+                    <img src="./images/Manali.jpg" class="img-fluid">   
+                  </div>
+                    <h2>Manali</h2> 
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                      Eum quas tempora id ullam necessitatibus, amet praesentium 
+                      reiciendis ea corrupti aperiam repudiandae voluptas at consequatur laudantium, 
+                      labore deserunt. Rerum, reprehenderit similique.</p>
+
+                    <i class="bi bi-star-fill"></i>               
+                    <i class="bi bi-star-fill"></i>               
+                    <i class="bi bi-star-fill"></i>               
+                    <i class="bi bi-star-fill"></i>               
+                    <i class="bi bi-star-half"></i> 
+                    
+                    <div id="packagefooter">
+                      <h5> Price - $300 </h5>
+                      <button type="button">Book Now</button>                       
+                    </div>              
+                </div>                
+              </div>            
+            </div>  
+
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body text-center">
+                  <div class="container text-center">
+                    <img src="./images/Moraine Lake.jpg" class="img-fluid">   
+                  </div>
+                    <h2>Moraine Lake</h2> 
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                      Eum quas tempora id ullam necessitatibus, amet praesentium 
+                      reiciendis ea corrupti aperiam repudiandae voluptas at consequatur laudantium, 
+                      labore deserunt. Rerum, reprehenderit similique.</p>
+
+                    <i class="bi bi-star-fill"></i>               
+                    <i class="bi bi-star-fill"></i>               
+                    <i class="bi bi-star-fill"></i>               
+                    <i class="bi bi-star-fill"></i>               
+                    <i class="bi bi-star-half"></i>  
+                    
+                    <div id="packagefooter">
+                      <h5> Price - $250 </h5>
+                      <button type="button">Book Now</button>                       
+                    </div>
+                </div>                
+              </div>            
+            </div> 
+
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body text-center">
+                  <div class="container text-center">
+                    <img src="./images/Tokyo Tower.jpeg" class="img-fluid">   
+                  </div>
+                    <h2>Tokyo Tower</h2> 
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                      Eum quas tempora id ullam necessitatibus, amet praesentium 
+                      reiciendis ea corrupti aperiam repudiandae voluptas at consequatur laudantium, 
+                      labore deserunt. Rerum, reprehenderit similique.</p>
+
+                    <i class="bi bi-star-fill"></i>               
+                    <i class="bi bi-star-fill"></i>               
+                    <i class="bi bi-star-fill"></i>               
+                    <i class="bi bi-star-fill"></i>               
+                    <i class="bi bi-star-half"></i>  
+                    
+                    <div id="packagefooter">
+                      <h5> Price - $200 </h5>
+                      <button type="button">Book Now</button>                       
+                    </div>
+                </div>                
+              </div>            
+            </div> 
+          </div>
+
+              <!-- Package Gallary row 3 -->
+
+            <div class="row mb-5">
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <div class="container text-center">
+                      <img src="./images/Sydney.jpg" class="img-fluid">   
+                    </div>
+                      <h2>Sydney</h2> 
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Eum quas tempora id ullam necessitatibus, amet praesentium 
+                        reiciendis ea corrupti aperiam repudiandae voluptas at consequatur laudantium, 
+                        labore deserunt. Rerum, reprehenderit similique.</p>
+
+                      <i class="bi bi-star-fill"></i>               
+                      <i class="bi bi-star-fill"></i>               
+                      <i class="bi bi-star-fill"></i>               
+                      <i class="bi bi-star-fill"></i>               
+                      <i class="bi bi-star-half"></i> 
+                      
+                      <div id="packagefooter">
+                        <h5> Price - $450 </h5>
+                        <button type="button">Book Now</button>                       
+                      </div>
+                  </div>                
+                </div>            
+              </div>  
+
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <div class="container text-center">
+                      <img src="./images/Sugarloaf Mountain.jpeg" class="img-fluid">   
+                    </div>
+                      <h2>Sugarloaf Mountain</h2> 
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Eum quas tempora id ullam necessitatibus, amet praesentium 
+                        reiciendis ea corrupti aperiam repudiandae voluptas at consequatur laudantium, 
+                        labore deserunt. Rerum, reprehenderit similique.</p>
+
+                      <i class="bi bi-star-fill"></i>               
+                      <i class="bi bi-star-fill"></i>               
+                      <i class="bi bi-star-fill"></i>               
+                      <i class="bi bi-star-fill"></i>               
+                      <i class="bi bi-star-half"></i>  
+                      
+                      <div id="packagefooter">
+                        <h5> Price - $550 </h5>
+                        <button type="button">Book Now</button>                       
+                      </div>
+                  </div>                
+                </div>            
+              </div> 
+
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <div class="container text-center">
+                      <img src="./images/Bangalore.jpeg" class="img-fluid">   
+                    </div>
+                      <h2>Bangalore</h2> 
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Eum quas tempora id ullam necessitatibus, amet praesentium 
+                        reiciendis ea corrupti aperiam repudiandae voluptas at consequatur laudantium, 
+                        labore deserunt. Rerum, reprehenderit similique.</p>
+
+                      <i class="bi bi-star-fill"></i>               
+                      <i class="bi bi-star-fill"></i>               
+                      <i class="bi bi-star-fill"></i>               
+                      <i class="bi bi-star-fill"></i>               
+                      <i class="bi bi-star-half"></i>  
+                      
+                      <div id="packagefooter">
+                        <h5> Price - $150 </h5>
+                        <button type="button">Book Now</button>                       
+                      </div>
+                  </div>                
+                </div>            
+              </div> 
+            </div>
+      </div>
+    
+
+
+      <!-- SERVICES SECTION -->
+      <div class="container mt-5 text-center" id="package">
+        <h1> Our <span>Services</span></h1>
+        <hr class="my-4">
+          <div class="card" id="slideshow">
+            
+              <div class="slider">
+                <div class="slide">
+                    <img src="./images/Flights.jpg" alt="Image 1">
+                    <div class="overlay">Flights</div>
+                </div>
+                <div class="slide">
+                  <img src="./images/Travel agents.jpg" alt="Image 2" >
+                  <div class="overlay">Travel Agents</div>
+                </div>
+                <div class="slide">
+                  <img src="./images/Retiring Rooms.jpeg" alt="Image 3" >
+                  <div class="overlay">Retiring Rooms</div>
+                </div>
+                <div class="slide">
+                  <img src="./images/Empanelment.jpg" alt="Image 4" >
+                  <div class="overlay">Empanelment</div>
+                </div>
+                <div class="slide">
+                  <img src="./images/food and drinks.jpeg" alt="Image 5" >
+                  <div class="overlay">Food and Drinks</div>
+                </div>
+                <div class="slide">
+                  <img src="./images/Hotel Services.jpg" alt="Image 5" >
+                  <div class="overlay">Hotel Services</div>
+                </div>
+                
+              </div>
+          </div>
+        </div>
+      
+      
+
+
+    <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("slide");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+      </script>
+      
+
+
+
+
+          
+    <br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>

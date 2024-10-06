@@ -1,0 +1,212 @@
+body{
+    background-color: #f7f2d7;
+}
+
+.bg-custom{
+    background-color: #1ea7d9;
+}
+
+.nav-link{
+    color: #fff !important;
+}
+
+.jumbotron{
+    background-color: #1ea7d9;
+    border-radius: 0px;
+    clip-path: polygon(100% 0, 89% 62%, 96% 100%, 3% 80%, 0% 50%, 0 0);
+}
+
+        /* Animation Text */
+#hero #animtext:after {
+    content: "";
+    animation-name: textanim;
+    animation-duration: 2s;     /*100/5=20 i.e 0.2 seconds*/
+    animation-iteration-count: infinite;
+}
+
+@keyframes textanim
+{
+    17%{
+        content:"India";
+        color:crimson;
+    }
+    34%{
+        content:"Brazile";
+        color:olivedrab;
+    }
+    51%{
+        content:"Australia";
+        color:violet;
+    }
+    68%{
+        content:"Germani";
+        color:ivory;
+    }
+    85%{
+        content: "Japan";
+        color:goldenrod;
+    }
+    100%{
+        contecnt: "Canada";
+        color:lemonchiffon;
+    }
+}
+
+.display-4{
+    font-weight: bold;
+    color: #fcde58;
+    text-shadow: 3px 2px 8px #000;
+
+}
+
+.lead{
+    font-weight: bolder;
+    color: #dbd409;
+    text-shadow: 3px 2px 2px #000;
+    
+}
+
+#jumbotron-img{
+    border-radius: 50px;
+    border: none;
+    box-shadow: -5px 15px 25px #000000;
+}
+
+.my-4{
+    box-shadow: 2px 3px 2px darkred;
+    background-color: olivedrab;
+}
+
+.btn{
+    box-shadow: 3px 2px 5px #000;
+}
+
+.card img:hover{
+    opacity: 0.5;
+    
+}
+
+/*Package Gallery*/
+#package h1 span, #booknow h1 span{
+    text-align: center;
+    font-family: "Edu AU VIC WA NT Guides", cursive;
+    text-decoration: underline;
+    color: #0498bd;
+}
+
+#package hr, #booknow hr{
+    width: 30%;
+    background-color: #0445bd;
+    height: 2px;  
+    margin: 0 auto;
+    
+}
+
+#package i{
+    color: rgb(243, 160, 6);
+}
+
+#package .card{
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: azure;
+    box-shadow: 2px 2px 5px #292929;
+}
+
+#package h1, #booknow h1{
+    text-align: center;
+    font-family: "Edu AU VIC WA NT Guides", cursive;
+}
+
+#packagefooter h5{
+    float: right;
+}
+#packagefooter button{
+    float: left;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: #f7f2d7;
+    color: #292929
+}
+
+#packagefooter button:hover{
+    background-color: #0905eb;
+    color: #f7f0ec; 
+}
+
+button{
+    box-shadow: 1px 2px 3px #352535;
+}
+
+.card p{
+    text-align: justify;
+    font-size: smaller;
+    margin: 20px;
+}
+
+    /* FORM SECTION */
+#bkform form {
+    display: flex;
+    flex-direction:column;
+    
+}
+    
+#bkform label, #bkform input, #bkform select, #bkform textarea, #bkform button {
+    margin-bottom: 10px;
+}
+.column {
+    width: 48%;
+}
+
+/* Services Section Sliders */
+
+
+
+.slider {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    max-width: 800px;
+}
+
+.slide {
+    position: relative;
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-in-out;
+    padding: 20px;
+    text-align: center;
+}
+
+.slide:hover .overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+#slideshow{
+    display: flex;
+    align-items: center;  
+} 
+
+#slideshow .slide img{
+    float: right;
+    max-height: 300px;
+    width: 100%; 
+}
+
